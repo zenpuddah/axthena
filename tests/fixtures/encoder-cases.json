@@ -1,0 +1,24 @@
+{
+  "schema_version":"axthena.encoder-check.v1",
+  "scope":"Frozen English retrieval contrasts, not population accuracy",
+  "documents":[
+    {"id":"nvidia","text":"NVIDIA designs graphics processing units and accelerated computing systems."},
+    {"id":"microsoft","text":"Microsoft develops Windows software, Azure cloud computing and enterprise productivity applications in Redmond."},
+    {"id":"tesla","text":"Tesla manufactures electric cars and battery energy storage systems."},
+    {"id":"volvo","text":"Volvo Cars is a Swedish passenger vehicle manufacturer."},
+    {"id":"visa","text":"Visa operates an electronic payments network for credit and debit cards."},
+    {"id":"pfizer","text":"Pfizer researches and produces pharmaceutical medicines and vaccines."},
+    {"id":"adams","text":"Adams Diversified Equity Fund is a closed-end investment company."},
+    {"id":"coreweave","text":"CoreWeave supplies GPU cloud infrastructure and data centres for AI workloads."},
+    {"id":"apple","text":"Apple designs iPhones, iPads, Mac computers and consumer software."},
+    {"id":"intel","text":"Intel designs and manufactures x86 central processing units and semiconductors."},
+    {"id":"cisco","text":"Cisco provides computer networking equipment and communications infrastructure."},
+    {"id":"nyu","text":"New York University is a private research university."}
+  ],
+  "queries":[
+    {"text":"NVIDIA Corporation, maker of GPUs and accelerated computing systems","expected":"nvidia"},
+    {"text":"Microsoft Corp., Windows developer and Azure cloud provider","expected":"microsoft"},
+    {"text":"Redmond company producing Windows and enterprise cloud software","expected":"microsoft"},
+    {"text":"Swedish maker of passenger cars","expected":"volvo"}
+  ]
+}

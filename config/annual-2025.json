@@ -1,0 +1,14 @@
+{
+  "schema_version": "axthena.public-plan.v1",
+  "from": "2025-01-01",
+  "to": "2025-12-31",
+  "partition": "month",
+  "page_size": 10,
+  "articles_per_scope": 2,
+  "pages_per_scope": 4,
+  "max_requests": 96,
+  "sources": [
+    {"name": "NVIDIA Blog", "endpoint": "https://blogs.nvidia.com/wp-json/wp/v2/posts"},
+    {"name": "Microsoft Cloud Blog", "endpoint": "https://www.microsoft.com/en-us/microsoft-cloud/blog/wp-json/wp/v2/posts"}
+  ]
+}

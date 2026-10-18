@@ -1,0 +1,12 @@
+{
+  "run_id": "run:78d81d9223b13c5ee7792ab9ca6914d5d6c1ce3fd247e5b369c9a3769ad77982",
+  "mode": "frozen query snapshots; no live AI or database",
+  "sha256": "4f62d9878f3d175df1633d540ae8d3ab095d660d98280b9c57591ac929258599",
+  "bytes": 5363603,
+  "views": [
+    "nvidia",
+    "microsoft",
+    "compare",
+    "strict"
+  ]
+}

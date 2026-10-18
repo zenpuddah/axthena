@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+home=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+local_node="$home/artifacts/tooling/node-v24.22.0-darwin-arm64/bin"
+if [ -x "$local_node/node" ]; then
+    PATH="$local_node:$PATH"
+    export PATH
+fi
+cd "$home/workspace"
+exec npm "$@"

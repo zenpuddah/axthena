@@ -1,0 +1,13 @@
+# Local trial evidence, logs, temporary test files and future builds.
+/artifacts/
+/build/
+__pycache__/
+.env
+.env.*
+.DS_Store
+**/.DS_Store
+/AGENTS.md
+/CLAUDE.md
+/.opencode/
+/.codex/
+/docs/internal/

@@ -1,0 +1,6 @@
+{
+  "version": 6,
+  "configurePresets": [{"name":"axthena-dev","generator":"Unix Makefiles","binaryDir":"${sourceDir}/build/dev","cacheVariables":{"CMAKE_BUILD_TYPE":"RelWithDebInfo","BUILD_TESTING":"ON"}}],
+  "buildPresets": [{"name":"axthena-dev","configurePreset":"axthena-dev","targets":["axthena","axthena_tests","axthena_semantics_tests","axthena_recovery_tests","axthena_pipeline_tests","axthena_collection_tests","axthena_neo4j_tests","axthena_investigation_tests","llama-embedding"],"jobs":4}],
+  "testPresets": [{"name":"axthena-dev","configurePreset":"axthena-dev","output":{"outputOnFailure":true},"execution":{"noTestsAction":"error"}}]
+}

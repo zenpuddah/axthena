@@ -1,0 +1,12 @@
+{
+  "schema_version":"axthena.domain-policy.v1",
+  "domain_resolution":"candidate_union_v1",
+  "domain_attempt":"initial",
+  "model":{"providerID":"openai","id":"gpt-6-astra"},
+  "encoder":{"file":"artifacts/models/nomic-embed-text-v1.5.f16.gguf","sha256":"f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb","runtime_commit":"2a667032dc788c3a071d538e0b572e45a3f12731","dimensions":768,"max_tokens":2048,"threads":4,"query_prefix":"search_query: ","document_prefix":"search_document: "},
+  "candidate_limit":8,
+  "recovery_attempts":2,
+  "task_attempts":{
+    "task:66063054ad5955e02da47447744499315838908ca275d27fae66f14e5370da1c":"domain-correlation-retry-1"
+  }
+}

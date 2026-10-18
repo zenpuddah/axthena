@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+home=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export AXTHENA_HOME="$home"
+if [ -n "${AXTHENA_BINARY:-}" ]; then
+    exec "$AXTHENA_BINARY" "$@"
+fi
+if [ -x "$home/artifacts/workspace/install/bin/axthena" ]; then
+    exec "$home/artifacts/workspace/install/bin/axthena" "$@"
+fi
+if [ -x "$home/artifacts/install/bin/axthena" ]; then
+    exec "$home/artifacts/install/bin/axthena" "$@"
+fi
+exec "$home/build/dev/axthena" "$@"

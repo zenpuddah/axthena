@@ -1,0 +1,15 @@
+{
+  "schema_version": "axthena.investigation-recipes.v1",
+  "run": "run:21d48cb21c46ff66cf64ea9f9babefca20d4272bf535065b0c7d9462fa49c396",
+  "base": {"intent":"overview","stocks":["NVDA.US"],"from":"2025-01-01","to":"2025-12-31","mode":"declared_date","max_hops":0,"limit":5000},
+  "cases": [
+    {"name":"company-comparison","plan":{"intent":"compare","stocks":["NVDA.US","MSFT.US"]}},
+    {"name":"nvidia-first-half","plan":{"to":"2025-06-30"}},
+    {"name":"nvidia-second-half","plan":{"from":"2025-07-01"}},
+    {"name":"nvidia-opinions","plan":{"intent":"opinions"}},
+    {"name":"reported-claims","plan":{"intent":"claims","stocks":[]}},
+    {"name":"strict-availability","plan":{"mode":"strict"}},
+    {"name":"price-direction","plan":{"intent":"judgments"}},
+    {"name":"company-connections","plan":{"intent":"relationships","max_hops":1}}
+  ]
+}

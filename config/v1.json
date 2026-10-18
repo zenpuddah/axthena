@@ -1,0 +1,18 @@
+{
+  "schema_version":"axthena.policy.v1",
+  "model":{"providerID":"openai","id":"gpt-6-astra"},
+  "opencode_version":"2.0.30",
+  "encoder":{"file":"artifacts/models/nomic-embed-text-v1.5.f16.gguf","sha256":"f7af6f66802f4df86eda10fe9bbcfc75c39562bed48ef6ace719a251cf1c2fdb","runtime_commit":"2a667032dc788c3a071d538e0b572e45a3f12731","dimensions":768,"max_tokens":2048,"threads":4,"query_prefix":"search_query: ","document_prefix":"search_document: "},
+  "candidate_limit":8,
+  "idea_candidate_limit":8,
+  "forecast_fallback_days":null,
+  "max_hops":3,
+  "max_expansions":1000,
+  "max_results":500,
+  "stocks":[{"symbol":"NVDA.US","issuer":"NVIDIA","basis":"owner configured target; not historical issuer confirmation"},{"symbol":"MSFT.US","issuer":"Microsoft","basis":"owner configured target; not historical issuer confirmation"}],
+  "authorities":[{"host":"blogs.nvidia.com","organisation":"NVIDIA","predicate":"ANNOUNCEMENT"},{"host":"nvidianews.nvidia.com","organisation":"NVIDIA","predicate":"ANNOUNCEMENT"}],
+  "strict_unknown_availability":"exclude",
+  "hold_visibility":"visible_excluded_from_confirmed_only",
+  "membership":"same_against_canonical_and_all_variants",
+  "source_cap":20
+}

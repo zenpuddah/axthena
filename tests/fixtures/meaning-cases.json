@@ -1,0 +1,12 @@
+{
+  "schema_version":"axthena.meaning-cases.v1",
+  "scope":"Synthetic contrasts. No real-world forecasts. Frozen before first model execution.",
+  "canonical":"NVIDIA shares will rise over October 1-15 because its new chip reduces customer computing costs, provided the chip ships on time.",
+  "cases":[
+    {"name":"faithful paraphrase","summary":"Provided its new chip is delivered on schedule, NVIDIA stock will increase during October 1-15 because customers will pay less for computing.","expect_reuse":true},
+    {"name":"different material reason","summary":"NVIDIA shares will rise over October 1-15 because a new distribution partnership expands access to customers, provided the chip ships on time.","expect_reuse":false},
+    {"name":"different material condition","summary":"NVIDIA shares will rise over October 1-15 because its new chip reduces customer computing costs, provided a pending export licence is approved.","conditions":"provided a pending export licence is approved","expect_reuse":false},
+    {"name":"overlapping unequal window","summary":"NVIDIA shares will rise over October 5-19 because its new chip reduces customer computing costs, provided the chip ships on time.","start":"2026-10-05","end":"2026-10-19","expect_reuse":false},
+    {"name":"nontransitive material variant","summary":"Provided its new chip is delivered on schedule, NVIDIA stock will increase during October 1-15 because customers will pay less for computing.","extra_variant":"NVIDIA shares will rise over October 1-15 because a distribution partnership increases its customer base, provided the chip ships on time.","expect_reuse":false}
+  ]
+}
